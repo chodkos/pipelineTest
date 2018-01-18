@@ -8,12 +8,20 @@ pipeline {
      stages {
 
 
-               stage ('Test Stage') {
+               stage ('First Test Stage') {
 
                           steps {
                              bat 'mvn test'
                               }
                           }
+
+
+               stage ('Second Test Stage') {
+
+                                         steps {
+                                            bat 'clean install -Dsurefire.suiteXmlFiles=anotherTest.xml'
+                                             }
+                                         }
 
 
          stage ('Compile Stage') {

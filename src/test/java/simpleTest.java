@@ -11,4 +11,10 @@ public class simpleTest {
         System.out.println(2+2);
     }
 
+    @Test
+    public void another(){
+        Assert.assertEquals(5+5, 10);
+        System.out.println(5+5);
+    }
+
 }
