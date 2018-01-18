@@ -23,7 +23,5 @@ pipeline {
                  bat 'mvn complile'
                  }
              }
-         }
-
-     }
- }
+          }
+      }
