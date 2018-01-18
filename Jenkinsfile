@@ -16,6 +16,13 @@ pipeline {
                  }
              }
 
+               stage ('Test Stage') {
+
+                          steps {
+                             bat 'mvn test'
+                              }
+                          }
+
 
          stage ('Compile Stage') {
 
