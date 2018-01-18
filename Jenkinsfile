@@ -20,7 +20,7 @@ pipeline {
          stage ('Compile Stage') {
 
              steps {
-                 bat 'mvn complile'
+                 bat 'mvn install'
                  }
              }
           }
