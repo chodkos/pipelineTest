@@ -1,8 +1,10 @@
 
 pipeline {
      agent any
-     def mvnTool = tool 'Maven_3_3_9'
-
+     tools{
+     maven 'Maven 3.5.2'
+     jdk 'JDK 9.0.1'
+     }
      stages {
          stage ('Initialize') {
 
@@ -18,7 +20,7 @@ pipeline {
          stage ('Compile Stage') {
 
              steps {
-                sh "${mvnTool}/bin/mvn clean install"
+                bat 'mvn install'
                  }
              }
           }
