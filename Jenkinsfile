@@ -6,15 +6,7 @@ pipeline {
      jdk 'JDK 9.0.1'
      }
      stages {
-         stage ('Initialize') {
 
-             steps {
-                 bat '''
-                        echo "PATH = ${PATH}"
-                        echo "M2_HOME = ${M2_HOME}"
-                        '''
-                 }
-             }
 
                stage ('Test Stage') {
 
