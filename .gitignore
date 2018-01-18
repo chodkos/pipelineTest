@@ -1,0 +1,12 @@
+# compiled output
+build/
+buildtools/
+target/
+
+# IDEs and editors
+.idea/*
+*.orig
+.idea/misc.xml
+
+# screenshots
+FailedTestScreenshots/*
