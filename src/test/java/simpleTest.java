@@ -17,4 +17,16 @@ public class simpleTest {
         System.out.println(5+5);
     }
 
+    @Test
+    public void shouldPass(){
+        Assert.assertTrue(true);
+    }
+
+    @Test
+    public void shouldFail(){
+        Assert.assertTrue(false);
+    }
+
+
+
 }
