@@ -28,7 +28,7 @@ public class simpleTest {
     @Test
     public void shouldPass(){
         LOG.info("Inside shouldPass test");
-        Assert.assertTrue(true);
+        Assert.assertTrue(false);
         LOG.info("Sucess");
     }
 
