@@ -35,7 +35,7 @@ public class simpleTest {
     @Test
     public void shouldFail(){
         LOG.info("Inside shouldFail test");
-        Assert.assertTrue(true);
+        Assert.assertTrue(false);
         LOG.info("Should fail sometimes");
     }
 
