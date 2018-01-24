@@ -1,6 +1,4 @@
 import org.testng.Assert;
-import org.testng.ITest;
-import org.testng.ITestResult;
 import org.testng.annotations.Test;
 
 import java.util.logging.Logger;
@@ -35,7 +33,8 @@ public class simpleTest {
     @Test
     public void shouldFail(){
         LOG.info("Inside shouldFail test");
-        Assert.assertTrue(true);
+        LOG.info("Lorem ipsum");
+        Assert.assertTrue(false);
         LOG.info("Should fail sometimes");
     }
 
