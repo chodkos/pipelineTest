@@ -34,7 +34,7 @@ public class simpleTest {
     public void shouldFail(){
         LOG.info("Inside shouldFail test");
         LOG.info("Lorem ipsum");
-        Assert.assertTrue(true);
+        Assert.assertTrue(false);
         LOG.info("Should fail sometimes");
     }
 
