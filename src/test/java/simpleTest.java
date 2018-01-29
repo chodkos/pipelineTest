@@ -1,6 +1,9 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.logging.Logger;
 
 public class simpleTest {
@@ -34,8 +37,17 @@ public class simpleTest {
     public void shouldFail(){
         LOG.info("Inside shouldFail test");
         LOG.info("Lorem ipsum");
-        Assert.assertTrue(false);
+        Assert.assertTrue(true);
         LOG.info("Should fail sometimes");
+
+        try {
+            PrintWriter out = new PrintWriter("screenshot/filename.txt");
+            out.println("New date: " + System.currentTimeMillis());
+            out.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
     }
 
 
