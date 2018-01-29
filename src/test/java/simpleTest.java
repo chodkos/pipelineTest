@@ -37,7 +37,7 @@ public class simpleTest {
     public void shouldFail(){
         LOG.info("Inside shouldFail test");
         LOG.info("Lorem ipsum");
-        Assert.assertTrue(true);
+
         LOG.info("Should fail sometimes");
 
         try {
@@ -48,6 +48,7 @@ public class simpleTest {
             e.printStackTrace();
         }
 
+        Assert.assertTrue(false);
     }
 
 
